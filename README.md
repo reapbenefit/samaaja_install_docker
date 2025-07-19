@@ -28,7 +28,7 @@ samaaja-install/
 ## ⚙️ Step 1: Clone This Repository
 
 ```bash
-git clone https://github.com/reapbenefit/samaaja_docker_install.git
+git clone https://github.com/reapbenefit/samaaja_install_docker.git
 cd samaaja_docker_install
 ```
 
