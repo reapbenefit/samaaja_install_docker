@@ -90,6 +90,8 @@ Once you've successfully installed Samaaja using Docker, follow these **post-ins
 
 > This triggers the backend setup logic and completes initial configuration.
 
+View your leaderboard at http://localhost:8000/leaderboard
+
 ---
 
 ## 📦 Notes
