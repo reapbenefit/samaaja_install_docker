@@ -1,0 +1,43 @@
+version: "3.9"
+
+services:
+  mariadb:
+    image: mariadb:10.6
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+    volumes:
+      - mariadb_data:/var/lib/mysql
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-p${MYSQL_ROOT_PASSWORD}"]
+      interval: 10s
+      retries: 5
+  redis:
+    image: redis:6
+    restart: always
+    ports:
+      - "11000:6379"
+    volumes:
+      - redis_data:/data
+
+  frappe:
+    build: .
+    depends_on:
+      mariadb:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    env_file:
+      - .env    
+    volumes:
+      - sites:/home/frappe/frappe-bench/sites
+    ports:
+      - "8000:8000"
+    command: ["./entrypoint.sh"]
+
+volumes:
+  mariadb_data:
+  redis_data:
+  sites:
+
