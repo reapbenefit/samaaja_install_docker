@@ -15,15 +15,6 @@ SAMAAJA_APP_BRANCH=${SAMAAJA_APP_BRANCH:-version-15}
 
 cd /home/frappe/frappe-bench
 
-echo "=== Environment Variables ==="
-echo "SITE_NAME: $SITE_NAME"
-echo "DB_HOST: $DB_HOST"
-echo "DB_PORT: $DB_PORT"
-echo "REDIS_URL: $REDIS_URL"
-echo "SOCKETIO_PORT: $SOCKETIO_PORT"
-echo "ADMIN_PASSWORD: $ADMIN_PASSWORD"
-echo "MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:0:4}****"
-echo "=============================="
 
 # ✅ Wait for MariaDB using correct credentials
 echo "Waiting for MariaDB to accept connections..."
@@ -47,9 +38,6 @@ if [ ! -d "sites/$SITE_NAME" ]; then
       --mariadb-root-password "$MYSQL_ROOT_PASSWORD" \
       --mariadb-user-host-login-scope='%'
 
-    # Optional ERPNext installation (uncomment if needed)
-    # bench get-app erpnext --branch version-15
-    # bench --site "$SITE_NAME" install-app erpnext
 else
     echo "Site $SITE_NAME already exists. Skipping site creation."
 fi
