@@ -29,7 +29,7 @@ samaaja-install/
 
 ```bash
 git clone https://github.com/reapbenefit/samaaja_install_docker.git
-cd samaaja_docker_install
+cd samaaja_install_docker
 ```
 
 ---
