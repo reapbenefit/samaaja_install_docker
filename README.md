@@ -79,12 +79,14 @@ Once you've successfully installed Samaaja using Docker, follow these **post-ins
 
 1. Log in to your Frappe/Samaaja site.
 2. Search for and open **Energy Point Rule** in the Awesome Bar.
-3. Ensure that it is **enabled**.
+3. Ensure that it is **enabled**. Refer below image
+![Enable Energy Point Rule](https://raw.githubusercontent.com/reapbenefit/samaaja_install_docker/main/eneryg%20point%20enable.jpg)
 
 ### ✅ Step 2: Setup Samaaja via UI
 
 1. Go to **Samaaja Settings**.
-2. Click the button **"Setup Samaaja"**.
+2. Click the button **"Setup Samaaja"**. refer below image
+![Samaaja Setup](https://raw.githubusercontent.com/reapbenefit/samaaja_install_docker/main/setup.jpg)
 
 > This triggers the backend setup logic and completes initial configuration.
 
