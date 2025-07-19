@@ -36,8 +36,8 @@ cd samaaja_docker_install
 
 ## 📝 Step 2: Configure Environment Variables
 
-Edit the `.env` file to set:
-
+Edit the `.env` file to set below variables.
+Refer [Samaaja](https://github.com/reapbenefit/Samaaja) documentation for the latest stable branch name
 ```env
 MYSQL_ROOT_PASSWORD
 SITE_NAME
