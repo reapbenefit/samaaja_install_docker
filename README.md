@@ -106,6 +106,9 @@ docker-compose down -v
 - [Samaaja](https://github.com/reapbenefit/Samaaja) by FOSS United / ReapBenefit and maintained by [Impactyaan](https://impactyaan.com)
 
 ---
+## 📬 Questions or Issues?
+For any questions, issues, or support, please contact us at:
+📧 contact@impactyaan.org
 
 ## 📄 License
 
