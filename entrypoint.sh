@@ -42,13 +42,13 @@ else
     echo "Site $SITE_NAME already exists. Skipping site creation."
 fi
 
-# ✅ Install Samaaj app from GitHub if not already installed
-if [ ! -d "apps/samaaj" ]; then
-    echo "Installing Samaaj app..."
-    bench get-app samaaj https://github.com/reapbenefit/Samaaja --branch "$SAMAAJA_APP_BRANCH"
+# ✅ Install Samaaja app from GitHub if not already installed
+if [ ! -d "apps/samaaja" ]; then
+    echo "Installing Samaaja app..."
+    bench get-app samaaja https://github.com/reapbenefit/Samaaja --branch "$SAMAAJA_APP_BRANCH"
     bench --site "$SITE_NAME" install-app samaaja
 else
-    echo "Samaaj app already exists. Skipping installation."
+    echo "Samaaja app already exists. Skipping installation."
 fi
 
 exec bench start
