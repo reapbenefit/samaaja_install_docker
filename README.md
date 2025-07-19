@@ -71,6 +71,24 @@ http://<site-name>:8000
 Or use your public IP/domain if deploying remotely.
 
 ---
+## 🛠️ Step 5 Samaaja Post-Installation Setup
+
+Once you've successfully installed Samaaja using Docker, follow these **post-installation steps** to complete the setup:
+
+### ✅ Step 1: Enable Energy Point Rule
+
+1. Log in to your Frappe/Samaaja site.
+2. Search for and open **Energy Point Rule** in the Awesome Bar.
+3. Ensure that it is **enabled**.
+
+### ✅ Step 2: Setup Samaaja via UI
+
+1. Go to **Samaaja Settings**.
+2. Click the button **"Setup Samaaja"**.
+
+> This triggers the backend setup logic and completes initial configuration.
+
+---
 
 ## 📦 Notes
 
