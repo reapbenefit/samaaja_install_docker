@@ -47,6 +47,7 @@ SAMAAJA_BRANCH
 ---
 
 ## 🐳 Step 3: Build and Start the Containers
+⚠️ Line Endings (Important for Windows Users) Ensure your Git is configured to use Unix-style line endings (LF) for compatibility with Docker and shell scripts.
 
 ```bash
 docker-compose up --build
